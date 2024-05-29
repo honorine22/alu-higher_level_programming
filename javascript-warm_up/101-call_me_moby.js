@@ -1,3 +1,4 @@
+#!/usr/bin/node
 function repeat(x, theFunction) {
     if (x <= 0) {
       return; // Handle invalid input (x should be positive)

@@ -1,3 +1,4 @@
+#!/usr/bin/node
 // modifyMyVar.js
 const myVarModule = require("./myVarModule");
 
