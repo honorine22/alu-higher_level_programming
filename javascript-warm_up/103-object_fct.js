@@ -1,6 +1,6 @@
 #!/usr/bin/node
 function createCounter() {
-  let value = 0; // Using let instead of var for block-scoped variable
+  let value = 0;
 
   function getValue() {
     return value;

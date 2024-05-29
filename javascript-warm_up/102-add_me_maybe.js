@@ -1,5 +1,5 @@
 #!/usr/bin/node
-function incrementAndCall(number, theFunction) {
+function addMeMaybe(number, theFunction) {
   if (number <= 0) {
     return; // Handle invalid input (number should be positive)
   }
