@@ -1,10 +1,4 @@
 #!/usr/bin/node
-function repeat(x, theFunction) {
-    if (x <= 0) {
-      return; // Handle invalid input (x should be positive)
-    }
-    for (let i = 0; i < x; i++) {
-      theFunction();
-    }
-  }
-  
+exports.callMeMoby = function (x, theFunction) {
+  for (let y = 0; y < x; y++) theFunction();
+};

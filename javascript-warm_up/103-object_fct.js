@@ -1,31 +1,18 @@
 #!/usr/bin/node
-function createCounter() {
-  let value = 0;
+const myObject = {
+  type: "object",
+  value: 12,
+};
 
-  function getValue() {
-    return value;
-  }
+console.log(myObject);
 
-  function setValue(newValue) {
-    value = newValue;
-  }
+myObject.incr = function () {
+  this.value++;
+};
 
-  function incr() {
-    value += 1;
-  }
-
-  return {
-    getValue: getValue,
-    setValue: setValue,
-    incr: incr,
-  };
-}
-
-const counter = createCounter();
-console.log(counter.getValue()); // 0
-counter.incr();
-console.log(counter.getValue()); // 1
-counter.setValue(5);
-console.log(counter.getValue()); // 5
-counter.incr();
-console.log(counter.getValue()); // 6
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
