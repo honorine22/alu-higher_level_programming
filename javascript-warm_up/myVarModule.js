@@ -1,14 +1,14 @@
 let myVar = 0;
 
-function getMyVar() {
+function getMyVar () {
   return myVar;
 }
 
-function setMyVar(newValue) {
+function setMyVar (newValue) {
   myVar = newValue;
 }
 
 module.exports = {
   getMyVar,
-  setMyVar,
+  setMyVar
 };
